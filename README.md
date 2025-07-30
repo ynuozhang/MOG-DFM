@@ -1,24 +1,5 @@
----
-extra_gated_fields:
-  Name: text
-  Company: text
-  Country: country
-  Specific date: date_picker
-  I want to use this model for:
-    type: select
-    options: 
-      - Research
-      - Education
-      - label: Other
-        value: other
-extra_gated_prompt: "MOG-DFM License: https://drive.google.com/file/d/1LJuGrsRZMoqsrZa1gSfsCihiih5MPVRA/view?usp=sharing"
-extra_gated_heading: Acknowledge license to access the repository
-extra_gated_button_content: Acknowledge license
----
 
 # Multi-Objective-Guided Discrete Flow Matching for Controllable Biological Sequence Design
-
-arXiv Paper: <https://arxiv.org/abs/2505.07086>
 
 Designing biological sequences that satisfy multiple, often conflicting, functional and biophysical criteria remains a central challenge in biomolecule engineering. While discrete flow matching models have recently shown promise for efficient sampling in high-dimensional sequence spaces, existing approaches address only single objectives or require continuous embeddings that can distort discrete distributions. We present Multi-Objective-Guided Discrete Flow Matching (MOG-DFM), a general framework to steer any pretrained discrete-time flow matching generator toward Pareto-efficient trade-offs across multiple scalar objectives. At each sampling step, MOG-DFM computes a hybrid rank-directional score for candidate transitions and applies an adaptive hypercone filter to enforce consistent multi-objective progression. We also trained two unconditional discrete flow matching models, PepDFM for diverse peptide generation and EnhancerDFM for functional enhancer DNA generation, as base generation models for MOG-DFM. We demonstrate MOG-DFM's effectiveness in generating peptide binders optimized across five properties (hemolysis, non-fouling, solubility, half-life, and binding affinity), and in designing DNA sequences with specific enhancer classes and DNA shapes. In total, MOG-DFM proves to be a powerful tool for multi-property-guided biomolecule sequence design.
 
